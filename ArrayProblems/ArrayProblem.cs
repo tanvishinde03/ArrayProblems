@@ -46,19 +46,31 @@ namespace ArrayProblems
             Console.WriteLine("Negative Numbers are:");
             foreach (int number in array)
             {
-                if(number < 0)
+                if (number < 0)
                 {
-                    Console.WriteLine("Negative Numbers are" +number);
+                    Console.WriteLine("Negative Numbers are" + number);
                 }
             }
             Console.ReadLine();
 
         }
+        public void CheckSumofArr()
+        {
+            int[] array = new int[] { 12, 23, 34, 45, 56, 67, 78, 89, 90 };
+            int sum = 0;
 
 
+            Console.WriteLine("Find sum of all elements of array:");
+
+            for(int i = 0; i < array.Length; i++)
+            {
+                sum += array[i];
+            }
+            Console.WriteLine("Sum of all Elements of Array is " + sum);
+            Console.ReadLine();
+        }
     }
 }
-
 
 
 
