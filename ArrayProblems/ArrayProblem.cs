@@ -17,15 +17,40 @@ namespace ArrayProblems
             Console.ReadLine();
         }
 
+        public void CheckMaxandMax()
+        {
+            Console.WriteLine("Maximum and Minimum Numbers:");
+            int[] array = { 20, 43, 55, 61, 79, 85, 99, 12, 34 };
+            int max = array[0];
+            int min = array[0];
+            foreach (int i in array)
+            {
+                if (i > max)
+                {
+                    max = i;
+                }
+                if (i < min)
+                {
+                    min = i;
+                }
+            }
 
-
-
-
-
-
-
-
-
-
+            Console.WriteLine("Maximum number in array is:" + max);
+            Console.WriteLine("Minimum number in array is:" + min);
+            Console.ReadLine();
+        }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+    
+
