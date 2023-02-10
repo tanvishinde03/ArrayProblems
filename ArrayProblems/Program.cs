@@ -10,7 +10,7 @@ namespace ArrayProblems
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(" 1:LengthofArray \n 2:MaxAndMin \n 3:NegativeNum \n 4: Sum of Numbers");
+            Console.WriteLine(" 1:LengthofArray \n 2:MaxAndMin \n 3:NegativeNum \n 4: Sum of Numbers \n 5: SumofArray");
             Console.WriteLine("choose the option");
             int opiton = Convert.ToInt32(Console.ReadLine());
 
@@ -31,8 +31,12 @@ namespace ArrayProblems
                     nagative.CheckNegativeNum();
                     break;
                 case 4:
-                    ArrayProblem  sum = new ArrayProblem ();
-                    sum.CheckSumofArr();
+                    ArrayProblem  pqr = new ArrayProblem ();
+                    pqr.CheckSumofArr();
+                    break;
+                case 5:
+                    ArrayProblem abc = new ArrayProblem();
+                    abc.Count();
                     break;
             }
         }

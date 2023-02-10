@@ -62,14 +62,32 @@ namespace ArrayProblems
 
             Console.WriteLine("Find sum of all elements of array:");
 
-            for(int i = 0; i < array.Length; i++)
+            for (int i = 0; i < array.Length; i++)
             {
                 sum += array[i];
             }
             Console.WriteLine("Sum of all Elements of Array is " + sum);
+
             Console.ReadLine();
+
+        }
+
+        public void Count()
+        {
+            
+            int[] array = new int[] { 9, 6, 5, 2, 1, 5, 8, 4 };
+            var total = 0;
+                total = array.Count();
+                Console.WriteLine(total);
+            
+            Console.ReadLine();
+
         }
     }
+
+
+
+
 }
 
 
@@ -81,5 +99,7 @@ namespace ArrayProblems
 
 
 
-    
+
+
+
 
