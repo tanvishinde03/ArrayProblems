@@ -39,6 +39,23 @@ namespace ArrayProblems
             Console.WriteLine("Minimum number in array is:" + min);
             Console.ReadLine();
         }
+
+        public void CheckNegativeNum()
+        {
+            int[] array = { 220, -643, 55, -261, 179, 785, -99, 120, -340 };
+            Console.WriteLine("Negative Numbers are:");
+            foreach (int number in array)
+            {
+                if(number < 0)
+                {
+                    Console.WriteLine("Negative Numbers are" +number);
+                }
+            }
+            Console.ReadLine();
+
+        }
+
+
     }
 }
 

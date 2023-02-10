@@ -10,7 +10,7 @@ namespace ArrayProblems
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(" 1:LengthofArray \n 2:MaxAndMin");
+            Console.WriteLine(" 1:LengthofArray \n 2:MaxAndMin \n 3:NegativeNum");
             Console.WriteLine("choose the option");
             int opiton = Convert.ToInt32(Console.ReadLine());
 
@@ -26,6 +26,10 @@ namespace ArrayProblems
                     minMaxNUmber.CheckMaxandMax();
                     break;
 
+                case 3:
+                    ArrayProblem nagative = new ArrayProblem();
+                    nagative.CheckNegativeNum();
+                    break;
             }
         }
     }
